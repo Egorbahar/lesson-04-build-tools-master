@@ -36,7 +36,7 @@ public class AddressMatchingServiceTest {
         secondaryAvailableAddress.setBuildingNumber("5");
         secondaryAvailableAddress.setStreet("Dzerzhinskogo avenue");
         secondaryAvailableAddress.setPostTown("Minsk");
-        secondaryAvailableAddress.setPostcode("Invalid Postcode");
+        secondaryAvailableAddress.setPostcode(POSTCODE);
 
         final List<AvailableAddress> expectedAddressesList = asList(primaryAvailableAddress, secondaryAvailableAddress);
 
