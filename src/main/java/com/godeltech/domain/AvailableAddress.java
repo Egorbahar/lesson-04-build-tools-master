@@ -6,7 +6,11 @@ import static org.apache.commons.lang.builder.ToStringBuilder.reflectionToString
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 @JsonPropertyOrder(
         { "organisationName", "subBuilding", "buildingName", "buildingNumber", "dependantThoroughfare", "street",
                 "locality", "postTown", "county", "postcode", "addressQualifier", "alk", "continueProvisioning",
@@ -51,112 +55,6 @@ public class AvailableAddress {
 
     @JsonProperty("cssExchangeDistrictCode")
     private String cssExchangeDistrictCode;
-
-    public String getOrganisationName() {
-        return organisationName;
-    }
-
-    public void setOrganisationName(final String organisationName) {
-        this.organisationName = organisationName;
-    }
-
-    public String getSubBuilding() {
-        return subBuilding;
-    }
-
-    public void setSubBuilding(final String subBuilding) {
-        this.subBuilding = subBuilding;
-    }
-
-    public String getBuildingName() {
-        return buildingName;
-    }
-
-    public void setBuildingName(final String buildingName) {
-        this.buildingName = buildingName;
-    }
-
-    public String getBuildingNumber() {
-        return buildingNumber;
-    }
-
-    public void setBuildingNumber(final String buildingNumber) {
-        this.buildingNumber = buildingNumber;
-    }
-
-    public String getDependantThoroughfare() {
-        return dependantThoroughfare;
-    }
-
-    public void setDependantThoroughfare(final String dependantThoroughfare) {
-        this.dependantThoroughfare = dependantThoroughfare;
-    }
-
-    public String getStreet() {
-        return street;
-    }
-
-    public void setStreet(final String street) {
-        this.street = street;
-    }
-
-    public String getLocality() {
-        return locality;
-    }
-
-    public void setLocality(final String locality) {
-        this.locality = locality;
-    }
-
-    public String getPostTown() {
-        return postTown;
-    }
-
-    public void setPostTown(final String postTown) {
-        this.postTown = postTown;
-    }
-
-    public String getCounty() {
-        return county;
-    }
-
-    public void setCounty(final String county) {
-        this.county = county;
-    }
-
-    public String getPostcode() {
-        return postcode;
-    }
-
-    public void setPostcode(final String postcode) {
-        this.postcode = postcode;
-    }
-
-    public String getAlk() {
-        return alk;
-    }
-
-    public void setAlk(final String alk) {
-        this.alk = alk;
-    }
-
-    public boolean isContinueProvisioning() {
-
-        return continueProvisioning;
-    }
-
-    public void setContinueProvisioning(final boolean continueProvisioning) {
-
-        this.continueProvisioning = continueProvisioning;
-    }
-
-    public String getCssExchangeDistrictCode() {
-        return cssExchangeDistrictCode;
-    }
-
-    public void setCssExchangeDistrictCode(final String cssExchangeDistrictCode) {
-        this.cssExchangeDistrictCode = cssExchangeDistrictCode;
-    }
 
     @Override
     public int hashCode() {
